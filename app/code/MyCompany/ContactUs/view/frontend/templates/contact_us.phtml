@@ -1,0 +1,32 @@
+<form class="contact" method="POST" action="<?php echo $this->getUrl('contact_us/index/post'); ?>" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'>
+
+<fieldset class="fieldset">
+        <div class="field name required">
+            <div class="control">
+                <input name="name" id="name" title="<?php echo __('Name') ?>" value="" class="input-text" type="text" placeholder="Введите ваше имя" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <div class="control">
+                <input name="email" id="email" title="<?php echo __('Email') ?>" value="" class="input-text" type="email" placeholder="Введите ваш Email" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field telephone required">
+            <div class="control">
+                <input name="telephone" id="telephone" title="<?php echo __('Telephone') ?>" value="" class="input-text" type="tel" placeholder="Введите ваш телефон" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field message required">
+            <div class="control">
+                <textarea rows="4" cols="50" data-validate="{required:true}" rows="4" cols="50" name="message" id="message" placeholder="Введите ваше сообщение здесь" title="<?php echo __('Message') ?>"></textarea>
+            </div>
+        </div>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit" title="<?php echo __('Отправить') ?>" class="action submit primary">
+                    <span><?php echo __('Отправить') ?></span>
+                </button>
+            </div>
+        </div>
+    </fieldset>
+</form>
